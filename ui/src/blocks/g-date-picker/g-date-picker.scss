@@ -1,0 +1,11 @@
+@import './vendors/daterangepicker';
+.daterangepicker .drp-calendar
+{
+	max-width: 354px;
+	width: 354px;
+}
+.daterangepicker .drp-calendar.left
+{
+	padding-top: 22px;
+	padding-bottom: 20px;
+}

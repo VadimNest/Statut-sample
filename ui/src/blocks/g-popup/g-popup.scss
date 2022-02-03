@@ -1,0 +1,47 @@
+.ui-kit__section .ui-kit__title--popup
+{
+	margin-bottom: 30px;
+}
+.g-popup
+{
+	position: fixed;
+	top:0px;
+	left:0px;
+	height: 100%;
+	width:100%;
+	background: rgba(124, 119, 145, 0.1);;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	visibility: hidden;
+	opacity:0;
+	transform: translateY(-5px);
+	transition: transform 0.1s ease-out;
+	&.open
+	{
+		visibility: visible;
+		opacity:1;
+		transform: translateY(0px);
+	}
+}
+.g-popup__content
+{
+	width: 600px;
+	max-height: calc(100% - 20px);
+	background: #fff;
+	margin:0 auto;
+	padding:20px;
+	border-radius:4px;
+	font-size:14px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.08);
+	overflow: auto;
+	position: relative;
+}
+.g-popup__clsoe
+{
+	position: absolute;
+	top:7px;
+	right: 7px;
+	cursor: pointer;
+}

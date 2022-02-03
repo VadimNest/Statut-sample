@@ -1,0 +1,126 @@
+{# index.twig #}
+
+{% block footer %}
+	<footer>
+		<div class="container">
+			<div>
+			<div class="footer__section">
+				<div class="">
+					<h2>Покупателям</h2>
+					{% include 'assets/svg/footer__arrow-bottom.svg' %}
+				</div>
+				<a href="" class="footer__first-link">Наша почта</a>
+				<a href="">Оплата и доставка</a>
+				<a href="">Вопросы и ответы</a>
+			</div>
+
+
+			<div class="footer__section">
+				<div>
+					<h2>Издательство</h2>
+					{% include 'assets/svg/footer__arrow-bottom.svg' %}
+
+				</div>
+				<a href="" class="footer__first-link">О компании</a>
+				<a href="">Авторам</a>
+				<a href="">Компании</a>
+				<a href="">Контакты</a>
+			</div>
+
+
+			<div class="footer__section">
+				<div>
+					<h2>Книги</h2>
+					{% include 'assets/svg/footer__arrow-bottom.svg' %}
+				</div>
+
+				<a href="" class="footer__first-link">Все категории</a>
+				<a href="">Бестселлеры</a>
+				<a href="">Новинки</a>
+				<a href="">Скидки и акции</a>
+			</div>
+
+
+			<div class="footer__section">
+				<div>
+					<h2>Прайс-лист</h2>
+					{% include 'assets/svg/footer__arrow-bottom.svg' %}
+				</div>
+
+				<div class="footer__pdf-wrapper">
+					{% include 'assets/svg/footer__pdf-icon.svg' %}
+					<div>
+						<p>Скачать прайс-лист</p>
+						<p>PDF, 12 Mb</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="footer__section footer__contact-data">
+				<div>
+					<h2>Телефон и Email</h2>
+				</div>
+
+				<div class="footer__section-mail">
+					{% include 'assets/svg/footer__letter.svg' %}
+					<a href="mailto:market@estatut.ru">market@estatut.ru</a>
+				</div>
+
+				<div class="footer__section-phone">
+					{% include 'assets/svg/footer__phone.svg' %}
+					<a href="phone:8 (968) 660-65-50">8 (968) 660-65-50</a>
+				</div>
+			</div>
+
+
+			<section class="footer__mobile">
+				<div>
+					<a href="">Политика конфиденциальности</a>
+					<a href="">Договор оферты</a>
+				</div>
+
+				<div>
+					{% include 'assets/svg/footer__phone.svg' %}
+					<a href="tel:8 (968) 660-65-50">8 (968) 660-65-50</a>
+					{% include 'assets/svg/info.svg' %}
+				</div>
+
+				<div>
+					{% include 'assets/svg/footer__letter.svg' %}
+					<a href="mailto:market@estatut.ru">market@estatut.ru</a>
+				</div>
+
+				<div>
+					{% include 'assets/svg/mapIcon.svg' %}
+					<a href="">ул. Лобачевского, 92, корп. 2 119454, г. Москва</a>
+				</div>
+
+				<div>
+					<p>© 2020 Издательство «Статут»</p>
+				</div>
+			</section>
+		</div>
+
+
+			<section class="footer__desktop">
+				<div>
+					<p>© 2020 Издательство «Статут»</p>
+				</div>
+
+				<p>ул. Лобачевского, 92, корп. 2 119454, г. Москва</p>
+				<a href="" class="footer__privacy-policy">Политика конфиденциальности</a>
+				<a href="">Договор оферты</a>
+			</section>
+
+
+
+		</div>
+
+
+
+
+
+
+	</footer>
+{% endblock %}

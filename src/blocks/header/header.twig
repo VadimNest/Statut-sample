@@ -1,0 +1,138 @@
+<header class="header">
+	<div class="header__section header__section--top">	
+		<ul>
+			<li>
+				<button>
+					{% include '/assets/svg/mapIcon.svg' %}
+					<a>Москва</a>
+				</button>
+			</li>
+			<li>
+				<button>
+					{% include '/assets/svg/deliveryPayIcon.svg' %}
+					<a>Доставка и оплата</a>
+				</button>
+			</li>
+			<li>
+				<button>
+					{% include '/assets/svg/addressIcon.svg' %}
+					<a>Адрес и часы работы</a>
+				</button>
+			</li>
+		</ul>
+
+
+		<ul>
+			<li>
+				<div>
+					{% include '/assets/svg/letterIcon.svg' %}
+					<a href="mailto:market@estatut.ru">market@estatut.ru</a>
+				</div>
+			</li>
+			<li>
+				<div>
+					{% include '/assets/svg/phoneIcon.svg' %}
+					<a href="tel:8 (968) 660-65-50">8 (968) 660-65-50</a>
+					{% include '/assets/svg/info.svg' %}
+				</div>
+			</li>
+		</ul>	
+	</div>
+		<hr class="header__hr">
+
+	<div class="header__section header__section--bottom">
+		<section class="header__top">
+			<div class="header__left">
+				{% include '/assets/svg/logoDesktop.svg' %}
+
+				<div>
+					<input type="search" name="search" placeholder="Автор, название, ISBN">
+					
+					<button>
+						{% include '/assets/svg/loupeDesktop.svg' %}
+						<p>Искать</p>
+					</button>
+				</div>
+			</div>
+
+
+			<div class="header__bottom--buttons">
+				<button>
+					{% include '/assets/svg/postponed.svg' %}
+					<p>Отложено</p>
+				</button>
+
+				<button>
+					{% include '/assets/svg/smile.svg' %}
+					<p>Войти</p>
+				</button>
+
+				<button>
+					{% include '/assets/svg/basketDesktop.svg' %}
+					<p>Корзина</p>
+
+					<div class="header__counter">
+						<p>10</p>
+					</div>	
+				</button>
+			</div>
+		</section>
+
+		<section class="header__bottom-second">
+			<ul>
+				<li>
+					<div>
+						{% include '/assets/svg/burger.svg' %}
+						<a>Каталог</a>
+					</div>
+				</li>
+				<li>
+						<a>Авторы</a>
+				</li>
+				<li>
+						<a>Новинки</a>
+				</li>
+				<li>
+					<div>
+						{% include '/assets/svg/discountIcon.svg' %}
+						<a>Скидки</a>
+					</div>
+				</li>
+				<li>
+					<a>Партнерам</a>
+				</li>
+				<li>
+					<a>Мы</a>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+
+
+	<div class="header__section header__section--mobile">
+		{% include '/assets/svg/burger.svg' %}
+		
+		<picture class="header__logo">
+			<source srcset="img/statutLogo.png" type="image/webp">
+			<img src="img/statutLogo.png" alt="Logo">
+		</picture>
+
+		<div class="header__searchWrapper">
+			<input type="search" name="search" placeholder="Что будем искать?" class="header__search">
+			{% include '/assets/svg/loupe.svg' %}
+		</div>
+
+		<div class="header__counter">
+			{% include '/assets/svg/basket.svg' %}
+			
+			<div>
+				<p>10</p>
+			</div>	
+		</div>
+	</svg>
+
+	</div>
+</header>
+
+

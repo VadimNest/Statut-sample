@@ -1,0 +1,100 @@
+<section class="banners__banners">
+	<div class="banners__banner--first">
+		<ul class="banners__slider-canvas">
+			<li>
+				<picture>
+					<source srcset="img/firstImg.png" type="image/webp">
+					<img src="img/firstImg.png" alt="firstImg">
+				</picture>
+			</li>
+			<li>
+				<picture>
+					<source srcset="img/firstImg.png" type="image/webp">
+					<img src="img/firstImg.png" alt="firstImg">
+				</picture>
+			</li>
+			<li>
+				<picture>
+					<source srcset="img/firstImg.png" type="image/webp">
+					<img src="img/firstImg.png" alt="firstImg">
+				</picture>
+			</li>
+			<li>
+				<picture>
+					<source srcset="img/firstImg.png" type="image/webp">
+					<img src="img/firstImg.png" alt="firstImg">
+				</picture>
+			</li>
+		</ul>
+
+		<div class="banners__buttons">
+			<button onclick="o2.banners.setCurrent(0); o2.banners.setBar(0, $('.banners__navbar--elem'))">
+				{% include '/assets/svg/banners__arrow-lleft.svg' %}
+			</button>
+			<button onclick="o2.banners.setCurrent(1); o2.banners.setBar(1, $('.banners__navbar--elem'))">
+				{% include '/assets/svg/banners__arrow-right.svg' %}
+			</button>
+		</div>	
+
+
+		<ul class="banners__navbar">
+			<li class="banners__navbar--elem banners__navbar--elem--active"></li>
+  			<li class="banners__navbar--elem"></li>
+  			<li class="banners__navbar--elem"></li>
+  			<li class="banners__navbar--elem"></li>
+  		</ul>
+	</div>
+
+
+	<div class="banners__banner--second">
+		<div>
+			<h3>Книга дня</h3>
+			<span>
+				<p>08:56:31</p>
+			</span>
+		</div>
+		
+		<picture class="banners__oleg-book">
+			<source srcset="img/olegBook.png" type="image/webp">
+			<img src="img/olegBook.png" alt="olegBook">
+		</picture>
+		
+		<p class="banners__description--first">Корпоративное право</p>
+		<p class="banners__description--second">Инвестирование: способы, риски, субъекты : монография</p>
+		<p class="banners__description--third">Майфат А.В.</p>
+		<p class="banners__description--fourth">4 450 ₽</p>
+
+		<ul>
+			<button>
+				{% include 'assets/svg/basketOrange.svg' %}
+				<p>В корзину</p>
+			</button>
+			<button>
+				{% include 'assets/svg/bookmark.svg' %}
+			</button>
+		</ul>
+	</div>
+
+
+	<div class="banners__banner--third">
+		<p>
+			<span>Бесплатно</span> доставим ваш заказ при покупке от 2000 ₽
+			{% include 'assets/svg/orange-ribbon.svg' %}
+		</p>
+		{% include 'assets/svg/deliveryman.svg' %}
+	</div>
+
+
+
+	<div class="banners__banner--fourth">
+		<p>
+			Скидка <br>  при регистрации до
+			 <span>
+			 	15%
+				{% include 'assets/svg/green-ribbon.svg' %}
+			 </span>
+		</p>
+		{% include 'assets/svg/banner4-img.svg' %}
+	</div> 
+	
+</section>

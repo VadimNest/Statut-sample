@@ -1,0 +1,148 @@
+.subscribe__section
+	{
+	min-width: 355px;
+	min-height: 190px;
+	max-width: 1140px;
+	width: calc(100% - 20px);
+	background: #0288D1;
+	border-radius: 5px;
+	display: flex;
+	margin: 0 auto 10px;
+	flex-direction:column;
+	padding: 20px 10px;
+	gap:10px;
+	h2
+	{
+		font-family: Roboto;
+		font-style: $regular;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 25px;
+		color: #FFFFFF;
+		width: 240px;
+		z-index: 1;
+	}
+	input
+	{
+		min-width: 335px;
+		height: 40px;
+		width: 100%;
+		background: #FFFFFF;
+		border-radius: 5px;
+		border:none;
+		padding: 10px 15px;
+		box-sizing:border-box;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(28, 41, 77, 0.5);
+	}
+	span
+	{
+		position: relative;
+	}
+	button
+	{
+		min-width: 335px;
+		width: 100%;
+		height: 40px;
+		border: 1px solid #FFFFFF;
+		box-sizing: border-box;
+		border-radius: 5px;
+		font-family: Roboto;
+		font-style: $regular;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 20px;
+		color: #FFFFFF;
+		cursor: pointer;
+	}
+	button:hover
+	{
+		background-color: rgba(255,255,255,0.2);
+	}
+	div
+	{
+		display: flex;
+		flex-wrap:wrap;
+		gap:10px;
+	}
+	.subscribe__vector
+	{
+		position: absolute;
+		top: -3px;
+		left: -10px;
+		z-index: -1;
+	}
+}
+
+@media(min-width: $tablet)
+{
+	.subscribe__section
+	{
+		min-height: auto;
+		input{width: 50%;}
+		span{position: relative;}
+		button{width: 50%;}
+		div{flex-wrap:nowrap}
+		h2{width: 100%;}
+	}
+}
+@media(min-width: $desktop)
+{
+	.subscribe__section
+	{
+		flex-direction:row;
+		margin-bottom: 30px;
+		margin-top: 32px;
+		input
+		{
+			max-width: 450px;
+			min-width: 335px;
+			width: 100%;
+		}
+		button
+		{
+			width: 137px;
+			min-width: 137px;
+		}
+		div{width: 100%;}
+		h2
+		{
+			min-width: 487px;
+			max-width: 487px;
+			height: 20px;
+			margin-top: 5px;
+		}
+	}
+}
+
+@media(min-width: $widescreen)
+{
+	.subscribe__section
+	{
+		padding: 32px 45px 33px;
+		gap:14px;
+		input
+		{
+			min-width: 418px;
+			max-width: 418px;
+		}
+		h2
+		{
+			min-width: 471px;
+			max-width: 471px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

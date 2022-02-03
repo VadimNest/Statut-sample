@@ -1,0 +1,20 @@
+{#
+	https://refreshless.com/nouislider/
+	Входные парметры блока:
+	* min: минимальное значение слайдера
+	* max: максимальное значение слайдера
+	* start: стартовое начальное значение слайдера
+ #}
+<div class="g-range-slider _range-slider-wrap">
+	<div class="_range-slider"
+		data-min="{{min}}"
+		data-max="{{max}}"
+		data-start="{{start}}"
+	></div>
+	<input type="hidden" class="_min">
+	<input type="hidden" class="_max">
+	<div class="g-range-slider__labels">
+		<div class="_label-from">0</div>
+		<div class="_label-to">0</div>
+	</div>
+</div>

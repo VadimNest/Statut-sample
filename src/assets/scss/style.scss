@@ -1,0 +1,46 @@
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+
+/* blocks */
+/* Пример подключения*/
+/* @import 'blocks/component/component'; */
+@import 'blocks/header/header.scss';
+@import 'blocks/banners/banners.scss';
+@import 'blocks/books/books.scss';
+@import 'blocks/benefits/benefits.scss';
+@import 'blocks/subscribe/subscribe.scss';
+@import 'blocks/news/news.scss';
+@import 'blocks/mailing/mailing.scss';
+@import 'blocks/footer/footer.scss';
+
+
+/* pages */
+/* @import 'index'; */
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,12 @@
+.container
+{
+	max-width: $widescreen;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	@include mq(768px)
+	{
+	}
+}
+body{ background-color: #F9F9FA; }

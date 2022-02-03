@@ -1,0 +1,167 @@
+.mailing__follow-buttons
+{
+	display: none;
+	visibility: hidden;
+}
+.mailing__section
+{
+	min-width: 355px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgba(28, 41, 77, 0.05);
+	border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+}
+.mailing__section
+{
+	div:first-child
+	{
+		display: flex;
+		justify-content: center;
+		gap:15px;
+		padding: 20px 0;
+		border-bottom: 1px solid rgba(28, 41, 77, 0.15);
+		button
+		{
+			width: 40px;
+			height: 40px;
+			border: none;
+		}
+	}
+
+	>div:last-child
+	{
+		display: flex;
+		padding: 21px 20px 19px;
+		max-width: 1140px;
+		margin: 0 auto;
+		gap:15px;
+		justify-content: center;
+		.mailing__logo
+		{
+			min-width: 50px;
+			height: 40px;
+		}
+		button
+		{
+			width: 50px;
+			height: 40px;
+			border: none;
+		}
+	}
+}
+.mailing__input-wrapper
+{
+	display: flex;
+	height: 40px;
+	max-width: 443px;
+	width: 100%;
+	input
+	{
+		min-width: 220px;
+		max-width: 393px;
+		width: 100%;
+		height: 40px;
+	    box-sizing: border-box;
+	    background: #FFFFFF;
+	    border: 1px solid rgba(40, 47, 54, 0.15);
+	    border-radius: 5px;
+	    padding: 10px 15px;
+	    border-top-right-radius: 0;
+	    border-bottom-right-radius: 0;
+	    outline: none;
+	    border-right: none;
+	}
+	input::placeholder
+	{
+		font-family: Roboto;
+		font-style: $regular;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 20px;
+		color: rgba(40, 47, 54, 0.5);
+	}
+	button
+	{
+		padding: 10px 15px;
+		min-width: 50px;
+		width: 50px;
+		background: #FF5C00;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+}
+
+@media(min-width: $tablet){
+	.mailing__section
+	{
+		div:first-child
+		{
+			display: none;
+			visibility: hidden;
+		}
+		div:last-child
+		{
+			justify-content: space-between;
+		}
+		.mailing__follow-buttons
+		{
+			visibility: visible;
+			display: flex;
+			gap: 15px;
+			.mailing__follow-button
+			{
+				max-width: 40px;
+				width: 40px;
+				box-sizing: border-box;
+				border: 1px solid rgba(40, 47, 54, 0.15);
+				border-radius: 50px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				box-sizing:border-box;
+			}
+		}
+	}
+}
+
+
+@media(min-width: $widescreen){
+	.mailing__section
+	{
+		border-bottom: none;
+		.mailing__input-wrapper{margin-left: 95px;}
+		div:last-child
+		{
+			padding: 25px 0 25px;
+			.mailing__follow-buttons{padding: 0;}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

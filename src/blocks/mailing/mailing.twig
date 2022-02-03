@@ -1,0 +1,43 @@
+<section class="mailing__section">
+	<div>
+		<button>
+			{% include '/assets/svg/mailing__facebook-icon.svg' %}
+		</button>
+
+
+		<button>
+			{% include '/assets/svg/mailing__vk-icon.svg' %}
+		</button>
+
+
+		<button>
+			{% include '/assets/svg/mailing__insta-icon.svg' %}
+		</button>
+	</div>
+
+	<div>
+		<picture class="mailing__logo">
+			<source srcset="img/mailing__logo.png" type="image/webp">
+			<img src="img/mailing__logo.png" alt="Logo">
+		</picture>
+		
+		<div class="mailing__input-wrapper">
+			<input type="text" placeholder="Подписаться на рассылку">
+			<button>
+				{% include '/assets/svg/mailing__telegram.svg' %}
+			</button>
+		</div>
+
+		<div class="mailing__follow-buttons">
+			<button class="mailing__follow-button">
+				{% include '/assets/svg/mailing__f-icon.svg' %}
+			</button>
+			<button class="mailing__follow-button">
+				{% include '/assets/svg/mailing__insta-grey-icon.svg' %}
+			</button>
+			<button class="mailing__follow-button">
+				{% include '/assets/svg/mailing__twitter-icon.svg' %}
+			</button>
+		</div>
+	</div>
+</section>
